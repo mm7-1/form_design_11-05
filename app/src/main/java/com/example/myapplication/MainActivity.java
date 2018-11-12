@@ -71,7 +71,7 @@ public class MainActivity extends AppCompatActivity {
 
         }
     }
-
+//
     void showNextPerson(View v) {
         if (personList.size() > 0) {
             if (i >= 0 && i < (personList.size() - 1)) {
