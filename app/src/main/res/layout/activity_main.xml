@@ -27,7 +27,7 @@
             android:layout_height="wrap_content"
             android:layout_marginRight="8dp"
             android:layout_weight="1"
-            android:onClick="editClick"
+            android:onClick="editPerson"
             app:srcCompat="@android:drawable/ic_menu_edit" />
 
         <ImageButton
@@ -37,7 +37,7 @@
             android:layout_marginLeft="8dp"
             android:layout_marginRight="8dp"
             android:layout_weight="1"
-            android:onClick="saveClick"
+            android:onClick="savePerson"
             app:srcCompat="@android:drawable/ic_menu_save" />
 
         <ImageButton
@@ -173,6 +173,14 @@
             android:layout_weight="1"
             android:ems="10"
             android:inputType="phone" />
+
+        <ImageButton
+            android:id="@+id/imageButton2"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:onClick="b_callClick"
+            app:srcCompat="@android:drawable/stat_sys_speakerphone" />
     </LinearLayout>
 
     <LinearLayout
@@ -207,6 +215,7 @@
     </LinearLayout>
 
     <LinearLayout
+        android:id="@+id/linearLayout7"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
@@ -225,7 +234,7 @@
             android:layout_height="wrap_content"
             android:layout_marginRight="8dp"
             android:layout_weight="1"
-            android:onClick="prevClick"
+            android:onClick="showPrevPerson"
             app:srcCompat="@android:drawable/ic_media_previous" />
 
         <ImageButton
@@ -234,8 +243,17 @@
             android:layout_height="wrap_content"
             android:layout_marginLeft="8dp"
             android:layout_weight="1"
-            android:onClick="nextClick"
+            android:onClick="showNextPerson"
             app:srcCompat="@android:drawable/ic_media_next" />
     </LinearLayout>
+
+    <TextView
+        android:id="@+id/i_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout7" />
 
 </android.support.constraint.ConstraintLayout>
